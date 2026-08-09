@@ -1,28 +1,12 @@
 # 即時通訊選型決策流程
 
-> 對應圖檔：`Communication Patterns.excalidraw`
 > 走法由**左上**開始，依 Yes/No 一路走到最終方案。
 > 本篇以 **.NET / ASP.NET Core** 開發者的角度撰寫，含實作細節與架構考量。
 
 ---
 
 # 一、選型總覽
-## 1. 對應表（MD ↔ Excalidraw）
-
-| MD 章節 | Excalidraw 位置 | 內容 |
-|---------|----------------|------|
-| ① 起點 | 圖左上第一個菱形 | Latency Sensitive? |
-| ② 推送線路 | 圖右側中間菱形 | Frequent, Bi-Directional? |
-| ③ 多媒體判定 | 圖右側上方菱形 | Peer to Peer? Audio/Video? |
-| ④ 拉取線路 | 圖左側下方菱形 | Moderate Update Frequency? |
-| ⑤ Webhook | 圖右上角方塊 | 伺服器對伺服器非同步推送 |
-| ⑥ Async 總結 | 圖底部 | Message Queue 解耦思想 |
-| 附錄 A | 全圖 | 技術比較總表 |
-| 附錄 B | 全圖 | SignalR 專章（.NET 首選） |
-
----
-
-## 2. 走法總覽
+## 1. 走法總覽
 
 ```mermaid
 flowchart TD

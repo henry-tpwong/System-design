@@ -1,20 +1,19 @@
 # DNS 負載平衡與解析流程
 
-> 對應圖檔：`DNS.excalidraw`
 > 本篇涵蓋 **DNS Load Balancing（五種策略）**、**DNS + Application Load Balancer 架構**、**Anycast DNS**、**DNS 解析八步驟** 與 **Reverse DNS**，並補充各雲端廠商的對應實作。
 
 ---
 
 # 一、內容總覽
 
-| 主題 | 章節 | 對應 Excalidraw 位置 |
-|------|------|---------------------|
-| DNS Load Balancing 五種策略 | [二](#二dns-load-balancing) | 左上文字區 |
-| DNS + App LB 架構圖 | [三](#三dns--application-load-balancer-架構) | 左側方塊與箭頭 |
-| Anycast DNS | [四](#四anycast-dns) | 右側 Anycast 區塊 |
-| 雲端廠商實作 | [五](#五雲端廠商實作) | 下方文字區 |
-| DNS 解析八步驟 | [六](#六dns-解析八步驟) | 圖檔 + 八步驟說明 |
-| Reverse DNS | [七](#七reverse-dns) | 最下方文字區 |
+| 主題 | 章節 |
+|------|------|
+| DNS Load Balancing 五種策略 | [二](#二dns-load-balancing) |
+| DNS + App LB 架構圖 | [三](#三dns--application-load-balancer-架構) |
+| Anycast DNS | [四](#四anycast-dns) |
+| 雲端廠商實作 | [五](#五雲端廠商實作) |
+| DNS 解析八步驟 | [六](#六dns-解析八步驟) |
+| Reverse DNS | [七](#七reverse-dns) |
 
 ---
 
